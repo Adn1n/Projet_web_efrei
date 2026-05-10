@@ -1,10 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Département Informatique EFREI - Accueil</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
+<header>
+    <div class="header-container">
+        <div class="logo-zone">
+            <img src="../img/logo-efrei.png" alt="Logo EFREI" class="logo">
+            <h1>Département Informatique</h1>
+        </div>
 
+        <button id="menu-button" class="menu-button">☰</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="equipe.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <p class="small-title">EFREI Paris</p>
+            <h2>Former les talents du numérique de demain</h2>
+            <p>
+                Bienvenue sur le site vitrine du département informatique de l’EFREI.
+                Vous y trouverez les formations, l’équipe enseignante et les informations
+                utiles pour découvrir notre environnement pédagogique.
+            </p>
+            <a href="formations.html" class="btn">Découvrir les formations</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="../img/hero-informatique.jpg" alt="Étudiant travaillant sur du code">
+        </div>
+    </section>
+
+    <section class="presentation">
+        <h2>Présentation du département</h2>
+        <p>
+            Le département informatique accompagne les étudiants dans l’apprentissage
+            des bases du développement, des systèmes numériques et des technologies web.
+            L’objectif est de former des profils capables de concevoir des solutions modernes,
+            utiles et responsables.
+        </p>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Programmation Web</h3>
+                <p>
+                    Apprentissage de HTML, CSS et JavaScript pour créer des sites web
+                    structurés, stylisés et interactifs.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Projets étudiants</h3>
+                <p>
+                    Les étudiants mettent en pratique leurs connaissances à travers des
+                    projets concrets réalisés en groupe.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Innovation numérique</h3>
+                <p>
+                    Le département encourage la créativité, la rigueur et l’utilisation
+                    intelligente des technologies du numérique.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="chiffres">
+        <h2>Chiffres clés</h2>
+        <div class="stats">
+            <div>
+                <strong>4+</strong>
+                <p>Pages principales</p>
+            </div>
+            <div>
+                <strong>HTML5</strong>
+                <p>Structure du site</p>
+            </div>
+            <div>
+                <strong>CSS3</strong>
+                <p>Design responsive</p>
+            </div>
+            <div>
+                <strong>JS</strong>
+                <p>Interactivité</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel-section">
+        <h2>Vie du département</h2>
+
+        <div class="carousel">
+            <button onclick="previousSlide()" class="carousel-btn">‹</button>
+
+            <div class="slide active">
+                <h3>Des cours pratiques</h3>
+                <p>Les étudiants apprennent en manipulant directement le code.</p>
+            </div>
+
+            <div class="slide">
+                <h3>Des projets en groupe</h3>
+                <p>Le travail collaboratif permet de développer l’autonomie et l’organisation.</p>
+            </div>
+
+            <div class="slide">
+                <h3>Une approche professionnelle</h3>
+                <p>Les projets sont pensés pour se rapprocher des situations réelles.</p>
+            </div>
+
+            <button onclick="nextSlide()" class="carousel-btn">›</button>
+        </div>
+    </section>
+</main>
+
+<button id="top-button" onclick="goTop()">↑</button>
+
+<footer>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">À propos</a>
+    </nav>
+    <p>© 2025 - Département Informatique EFREI</p>
+</footer>
 </body>
 </html>
