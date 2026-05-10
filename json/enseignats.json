@@ -1,0 +1,24 @@
+{
+  "enseignants": [
+    {
+      "nom": "Mohamed Hamidi",
+      "matiere": "Programmation Web",
+      "description": "Enseignant spécialisé en HTML, CSS et JavaScript.",
+      "image": "../img/image_prof_ramidi.png"
+    },
+
+    {
+      "nom": "Sophie Martin",
+      "matiere": "Algorithmique",
+      "description": "Accompagnement des étudiants en logique et développement.",
+      "image": "../img/image_prof_sophie.png"
+    },
+
+    {
+      "nom": "Thomas Bernard",
+      "matiere": "Réseaux",
+      "description": "Expert en systèmes réseaux et cybersécurité.",
+      "image": "../img/image_prof_thomas.png"
+    }
+  ]
+}

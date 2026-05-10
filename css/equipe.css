@@ -1,0 +1,128 @@
+/* PAGE EQUIPE */
+
+.page-intro{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.page-intro p{
+    font-size: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* TEACHERS */
+
+.teachers-grid{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.teacher-card{
+    background-color: white;
+    width: 320px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.teacher-card:hover{
+    transform: translateY(-8px);
+}
+
+.teacher-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.teacher-card h3{
+    color: #0A316C;
+    margin-bottom: 10px;
+}
+
+.subject{
+    display: inline-block;
+    background-color: #81ECEC;
+    color: #0A316C;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.teacher-btn{
+    margin-top: 20px;
+    background-color: #0A316C;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.teacher-btn:hover{
+    background-color: #81ECEC;
+    color: #0A316C;
+}
+
+/* SCHEDULE */
+
+.schedule-section{
+    background-color: #FFFFFF;
+}
+
+.table-container{
+    overflow-x: auto;
+    max-width: 1000px;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+th{
+    background-color: #0A316C;
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+td{
+    padding: 18px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+tr:hover{
+    background-color: #F4F7FA;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+
+    .teachers-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teacher-card{
+        width: 100%;
+        max-width: 400px;
+    }
+}

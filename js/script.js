@@ -63,3 +63,40 @@ menuButton.addEventListener("click", function(){
         nav.style.display = "flex";
     }
 });
+
+// JSON ENSEIGNANTS
+
+fetch("../json/enseignants.json")
+    .then(response => response.json())
+    .then(data => {
+
+        const container = document.getElementById("teachersContainer");
+
+        if(container){
+
+            container.innerHTML = "";
+
+            data.enseignants.forEach(teacher => {
+
+                container.innerHTML += `
+            
+            <article class="teacher-card">
+
+                <img src="${teacher.image}" alt="Enseignant">
+
+                <h3>${teacher.nom}</h3>
+
+                <p class="subject">${teacher.matiere}</p>
+
+                <p>${teacher.description}</p>
+
+                <button class="teacher-btn">
+                    Voir le profil
+                </button>
+
+            </article>
+
+            `;
+            });
+        }
+    });

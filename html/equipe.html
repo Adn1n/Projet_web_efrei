@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Département Informatique EFREI - Équipe</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/equipe.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
+<header>
+    <div class="header-container">
+        <div class="logo-zone">
+            <img src="../img/logo-efrei.png" alt="Logo EFREI" class="logo">
+            <h1>Département Informatique</h1>
+        </div>
+
+        <button id="menu-button" class="menu-button">☰</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="equipe.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-intro">
+        <div class="section-title">
+            <h2>Équipe enseignante</h2>
+            <div class="line"></div>
+        </div>
+
+        <p>
+            Le département informatique de l’EFREI est composé d’enseignants et
+            d’intervenants spécialisés dans différents domaines du numérique.
+            Ils accompagnent les étudiants dans leurs projets et leur apprentissage.
+        </p>
+    </section>
+
+    <section class="teachers-section">
+        <div class="section-title">
+            <h2>Nos enseignants</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="teachers-grid" id="teachersContainer">
+
+            <article class="teacher-card">
+                <img src="../img/image_prof_ramidi.png" alt="Enseignant_1">
+                <h3>Mohamed Hamidi</h3>
+                <p class="subject">Programmation Web</p>
+                <p>
+                    Enseignant spécialisé en HTML, CSS et JavaScript.
+                </p>
+                <button class="teacher-btn">Voir le profil</button>
+            </article>
+
+            <article class="teacher-card">
+                <img src="../img/image_prof_sophie.png" alt="Enseignant_2">
+                <h3>Sophie Martin</h3>
+                <p class="subject">Algorithmique</p>
+                <p>
+                    Accompagnement des étudiants en logique et développement.
+                </p>
+                <button class="teacher-btn">Voir le profil</button>
+            </article>
+
+            <article class="teacher-card">
+                <img src="../img/image_prof_thomas.png" alt="Enseignant">
+                <h3>Thomas Bernard</h3>
+                <p class="subject">Réseaux</p>
+                <p>
+                    Expert en systèmes réseaux et cybersécurité.
+                </p>
+                <button class="teacher-btn">Voir le profil</button>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="section-title">
+            <h2>Permanences enseignants</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Enseignant</th>
+                    <th>Jour</th>
+                    <th>Horaire</th>
+                    <th>Salle</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Mohamed Hamidi</td>
+                    <td>Lundi</td>
+                    <td>10h - 12h</td>
+                    <td>B204</td>
+                </tr>
+
+                <tr>
+                    <td>Sophie Martin</td>
+                    <td>Mercredi</td>
+                    <td>14h - 16h</td>
+                    <td>C102</td>
+                </tr>
+
+                <tr>
+                    <td>Thomas Bernard</td>
+                    <td>Vendredi</td>
+                    <td>9h - 11h</td>
+                    <td>A301</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<button id="top-button" onclick="goTop()">↑</button>
+
+<footer>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">À propos</a>
+    </nav>
+    <p>© 2025 - Département Informatique EFREI</p>
+</footer>
 
 </body>
 </html>
