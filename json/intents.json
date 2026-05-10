@@ -1,0 +1,240 @@
+{
+  "intents": [
+
+    {
+      "question": "formations",
+      "response": "Le département propose des formations en développement web, algorithmique, réseaux et bases de données."
+    },
+
+    {
+      "question": "web",
+      "response": "La formation web permet d’apprendre HTML, CSS et JavaScript."
+    },
+
+    {
+      "question": "html",
+      "response": "HTML permet de structurer les pages web."
+    },
+
+    {
+      "question": "css",
+      "response": "CSS permet de styliser et rendre les pages plus modernes."
+    },
+
+    {
+      "question": "javascript",
+      "response": "JavaScript permet d’ajouter de l’interactivité au site."
+    },
+
+    {
+      "question": "reseaux",
+      "response": "La spécialisation réseaux aborde les infrastructures et la cybersécurité."
+    },
+
+    {
+      "question": "base de données",
+      "response": "Les étudiants apprennent à manipuler et organiser les données numériques."
+    },
+
+    {
+      "question": "algorithmique",
+      "response": "L’algorithmique permet de développer la logique de programmation."
+    },
+
+    {
+      "question": "equipe",
+      "response": "Vous pouvez consulter la page Équipe pour découvrir les enseignants du département."
+    },
+
+    {
+      "question": "enseignants",
+      "response": "Le département possède plusieurs enseignants spécialisés dans différents domaines."
+    },
+
+    {
+      "question": "professeurs",
+      "response": "Les enseignants accompagnent les étudiants dans leurs projets et leur apprentissage."
+    },
+
+    {
+      "question": "contact",
+      "response": "Vous pouvez utiliser le formulaire de contact disponible sur cette page."
+    },
+
+    {
+      "question": "email",
+      "response": "Vous pouvez envoyer un message via le formulaire de contact."
+    },
+
+    {
+      "question": "projet",
+      "response": "Ce site est un projet réalisé dans le cadre du module TI402."
+    },
+
+    {
+      "question": "ti402",
+      "response": "Le module TI402 est consacré à la programmation web."
+    },
+
+    {
+      "question": "bonjour",
+      "response": "Bonjour 👋 Comment puis-je vous aider ?"
+    },
+
+    {
+      "question": "salut",
+      "response": "Salut 👋 Ravi de vous aider."
+    },
+
+    {
+      "question": "merci",
+      "response": "Avec plaisir 😊"
+    },
+
+    {
+      "question": "aide",
+      "response": "Je peux répondre aux questions sur les formations, les enseignants ou le projet."
+    },
+
+    {
+      "question": "stage",
+      "response": "Les étudiants peuvent réaliser des stages pour développer leur expérience professionnelle."
+    },
+
+    {
+      "question": "projets",
+      "response": "Les étudiants réalisent des projets pratiques tout au long de leur formation."
+    },
+
+    {
+      "question": "informatique",
+      "response": "Le département informatique forme les étudiants aux technologies du numérique."
+    },
+
+    {
+      "question": "cybersecurite",
+      "response": "La cybersécurité permet de protéger les systèmes et les données numériques."
+    },
+
+    {
+      "question": "developpement",
+      "response": "Le développement web consiste à créer des applications et des sites internet."
+    },
+
+    {
+      "question": "frontend",
+      "response": "Le front-end concerne la partie visible et interactive d’un site web."
+    },
+
+    {
+      "question": "backend",
+      "response": "Le back-end permet de gérer les données et le fonctionnement interne des applications."
+    },
+
+    {
+      "question": "json",
+      "response": "JSON est un format utilisé pour stocker et échanger des données."
+    },
+
+    {
+      "question": "fetch",
+      "response": "Fetch permet de récupérer des données depuis un fichier JSON ou une API."
+    },
+
+    {
+      "question": "responsive",
+      "response": "Le responsive design adapte le site aux téléphones, tablettes et ordinateurs."
+    },
+
+    {
+      "question": "etudiants",
+      "response": "Les étudiants travaillent sur des projets concrets durant leur formation."
+    },
+
+    {
+      "question": "universite",
+      "response": "L’EFREI est une école spécialisée dans les technologies du numérique."
+    },
+
+    {
+      "question": "ecole",
+      "response": "Le département informatique appartient à l’EFREI Paris."
+    },
+
+    {
+      "question": "cours",
+      "response": "Les cours combinent théorie, pratique et projets collaboratifs."
+    },
+
+    {
+      "question": "tp",
+      "response": "Les TP permettent aux étudiants de pratiquer directement sur ordinateur."
+    },
+
+    {
+      "question": "examens",
+      "response": "Les étudiants sont évalués à travers des projets, TP et examens."
+    },
+
+    {
+      "question": "notes",
+      "response": "Les notes dépendent des projets, contrôles et évaluations pratiques."
+    },
+
+    {
+      "question": "alternance",
+      "response": "Certaines formations peuvent être suivies en alternance."
+    },
+
+    {
+      "question": "stage obligatoire",
+      "response": "Les stages permettent de découvrir le monde professionnel et gagner en expérience."
+    },
+
+    {
+      "question": "campus",
+      "response": "Le campus EFREI propose un environnement moderne pour les étudiants."
+    },
+
+    {
+      "question": "ia",
+      "response": "L’intelligence artificielle est un domaine important de l’informatique moderne."
+    },
+
+    {
+      "question": "intelligence artificielle",
+      "response": "L’intelligence artificielle permet de créer des systèmes capables d’apprendre et d’analyser des données."
+    },
+
+    {
+      "question": "machine learning",
+      "response": "Le machine learning est une branche de l’intelligence artificielle."
+    },
+
+    {
+      "question": "database",
+      "response": "Les bases de données permettent de stocker et organiser les informations."
+    },
+
+    {
+      "question": "api",
+      "response": "Une API permet à plusieurs applications de communiquer entre elles."
+    },
+
+    {
+      "question": "code",
+      "response": "Le code informatique permet de créer des applications et des sites web."
+    },
+
+    {
+      "question": "programmation",
+      "response": "La programmation consiste à écrire des instructions compréhensibles par un ordinateur."
+    },
+
+    {
+      "question": "site web",
+      "response": "Ce projet est un site vitrine développé en HTML, CSS et JavaScript."
+    }
+
+  ]
+}

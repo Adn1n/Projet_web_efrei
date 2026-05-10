@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    transition: 0.3s;
+}
 
 body{
     font-family: Arial, sans-serif;

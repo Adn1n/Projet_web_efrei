@@ -190,4 +190,60 @@ document.addEventListener("DOMContentLoaded", function(){
             successModal.style.display = "none";
         });
     }
+
+    // CHATBOT AVEC JSON
+
+    const chatInput = document.getElementById("chatInput");
+    const sendChat = document.getElementById("sendChat");
+    const chatMessages = document.getElementById("chatMessages");
+
+    if(chatInput !== null && sendChat !== null && chatMessages !== null){
+
+        function addMessage(text, className){
+            const message = document.createElement("div");
+            message.className = className;
+            message.textContent = text;
+            chatMessages.appendChild(message);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function sendMessage(){
+            const userText = chatInput.value.toLowerCase().trim();
+
+            if(userText === ""){
+                return;
+            }
+
+            addMessage(chatInput.value, "user-message");
+            chatInput.value = "";
+
+            fetch("../json/intents.json")
+                .then(response => response.json())
+                .then(data => {
+
+                    let responseFound = false;
+
+                    data.intents.forEach(intent => {
+                        if(userText.includes(intent.question)){
+                            addMessage(intent.response, "bot-message");
+                            responseFound = true;
+                        }
+                    });
+
+                    if(responseFound === false){
+                        addMessage("Je n’ai pas compris votre question. Essayez avec : formations, web, équipe ou contact.", "bot-message");
+                    }
+                });
+        }
+
+        sendChat.addEventListener("click", function(){
+            sendMessage();
+        });
+
+        chatInput.addEventListener("keyup", function(event){
+            if(event.key === "Enter"){
+                sendMessage();
+            }
+        });
+    }
 });
