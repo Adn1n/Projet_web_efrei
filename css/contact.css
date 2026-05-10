@@ -248,3 +248,31 @@
         height: 250px;
     }
 }
+
+/* FAQ */
+
+.faq-section{
+    background-color: #FFFFFF;
+}
+
+.faq-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq-item{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.faq-item h3{
+    color: #0A316C;
+    margin-bottom: 12px;
+}
+
+.admission-section{
+    background-color: #F4F7FA;
+}

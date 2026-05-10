@@ -126,3 +126,38 @@ tr:hover{
         max-width: 400px;
     }
 }
+
+/* EXPERTISE */
+
+.expertise-section{
+    background-color: #FFFFFF;
+}
+
+.research-section{
+    background-color: #F4F7FA;
+}
+
+.research-list{
+    max-width: 850px;
+    margin: auto;
+    list-style: none;
+}
+
+.research-list li{
+    background-color: #0A316C;
+    color: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.research-list li::before{
+    content: "▶";
+    color: #FDCB6E;
+    margin-right: 12px;
+}
+
+.card-icon{
+    font-size: 40px;
+    margin-bottom: 20px;
+}

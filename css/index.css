@@ -156,3 +156,32 @@
         width: 100%;
     }
 }
+
+/* ACTUALITES */
+
+.actus-section{
+    background-color: #FFFFFF;
+}
+
+/* ACCES RAPIDES */
+
+.quick-access{
+    text-align: center;
+}
+
+.quick-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.quick-buttons .btn{
+    min-width: 220px;
+    text-align: center;
+}
+
+.actus-section .card:hover{
+    transform: translateY(-8px);
+}
