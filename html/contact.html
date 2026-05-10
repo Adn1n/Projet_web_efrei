@@ -1,10 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Département Informatique EFREI - Contact</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <script src="../js/script.js" defer></script>
 </head>
+
 <body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo-zone">
+            <img src="../img/logo-efrei.png" alt="Logo EFREI" class="logo">
+            <h1>Département Informatique</h1>
+        </div>
+
+        <button id="menu-button" class="menu-button">☰</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="equipe.html">Équipe</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-intro">
+
+        <div class="section-title">
+            <h2>Contact & À propos</h2>
+            <div class="line"></div>
+        </div>
+
+        <p>
+            Cette page permet de contacter le département informatique et
+            de présenter les informations principales du projet réalisé
+            dans le cadre du module de programmation web.
+        </p>
+
+    </section>
+
+    <section class="about-project">
+
+        <div class="section-title">
+            <h2>À propos du projet</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="about-cards">
+
+            <article class="about-card">
+                <h3>Projet</h3>
+                <p>
+                    Site vitrine du département informatique de l’EFREI.
+                </p>
+            </article>
+
+            <article class="about-card">
+                <h3>Technologies utilisées</h3>
+                <p>
+                    HTML5, CSS3, JavaScript, JSON et responsive design.
+                </p>
+            </article>
+
+            <article class="about-card">
+                <h3>Réalisation</h3>
+                <p>
+                    Projet réalisé dans le cadre du module TI402.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="members-section">
+
+        <div class="section-title">
+            <h2>Membres du projet</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="members-grid">
+
+            <article class="member-card">
+                <h3>Moubarac Snani</h3>
+                <p>
+                    Conception des pages HTML et organisation du site.
+                </p>
+            </article>
+
+            <article class="member-card">
+                <h3>Travail réalisé</h3>
+                <p>
+                    Création du style CSS et ajout des fonctionnalités JavaScript.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+
+        <div class="section-title">
+            <h2>Formulaire de contact</h2>
+            <div class="line"></div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text"
+                           id="lastname"
+                           placeholder="Votre nom">
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input type="text"
+                           id="firstname"
+                           placeholder="Votre prénom">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="email">Adresse email</label>
+
+                <input type="email"
+                       id="email"
+                       placeholder="exemple@email.com">
+            </div>
+
+            <div class="form-group">
+
+                <label for="subject">Sujet</label>
+
+                <select id="subject">
+
+                    <option value="">
+                        Choisir un sujet
+                    </option>
+
+                    <option value="formations">
+                        Formations
+                    </option>
+
+                    <option value="equipe">
+                        Équipe enseignante
+                    </option>
+
+                    <option value="projet">
+                        Projet web
+                    </option>
+
+                    <option value="autre">
+                        Autre demande
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="message">Message</label>
+
+                <textarea id="message"
+                          rows="6"
+                          maxlength="300"
+                          placeholder="Écrivez votre message ici"></textarea>
+
+                <p id="charCounter" class="char-counter">
+                    0 / 300 caractères
+                </p>
+
+            </div>
+
+            <p id="formError" class="form-error"></p>
+
+            <button type="submit" class="submit-btn">
+                Envoyer le message
+            </button>
+
+        </form>
+
+    </section>
+
+    <div id="successModal" class="modal">
+
+        <div class="modal-content">
+
+            <h3>Message envoyé</h3>
+
+            <p>
+                Votre message a bien été pris en compte.
+            </p>
+
+            <button id="closeModal" class="submit-btn">
+                Fermer
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<button id="top-button" onclick="goTop()">
+    ↑
+</button>
+
+<footer>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="formations.html">Formations</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">À propos</a>
+    </nav>
+
+    <p>
+        © 2025 - Département Informatique EFREI
+    </p>
+
+</footer>
 
 </body>
 </html>
