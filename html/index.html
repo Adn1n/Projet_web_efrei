@@ -6,7 +6,7 @@
     <title>Département Informatique EFREI - Accueil</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/script.js" defer></script>
+    <script src="../js/script.js?v=3" defer></script>
 </head>
 <body>
 <header>
@@ -89,22 +89,22 @@
 
         <div class="stats">
             <div>
-                <strong>1200+</strong>
+                <strong class="counter" data-target="1200">0</strong>
                 <p>Étudiants en informatique</p>
             </div>
 
             <div>
-                <strong>25</strong>
+                <strong class="counter" data-target="25">0</strong>
                 <p>Enseignants et intervenants</p>
             </div>
 
             <div>
-                <strong>10+</strong>
+                <strong class="counter" data-target="10">0</strong>
                 <p>Projets étudiants chaque année</p>
             </div>
 
             <div>
-                <strong>4</strong>
+                <strong class="counter no-plus" data-target="4">0</strong>
                 <p>Domaines de spécialisation</p>
             </div>
         </div>
@@ -153,19 +153,29 @@
             <button onclick="previousSlide()" class="carousel-btn">‹</button>
 
             <div class="slide active">
-                <h3>Des cours pratiques</h3>
-                <p>Les étudiants apprennent en manipulant directement le code.</p>
+                <img src="../img/carousel-campus.jpg" alt="Campus EFREI">
+                <div class="slide-content">
+                    <h3>Un campus moderne</h3>
+                    <p>Un environnement adapté aux projets numériques et au travail collaboratif.</p>
+                </div>
             </div>
 
             <div class="slide">
-                <h3>Des projets en groupe</h3>
-                <p>Le travail collaboratif permet de développer l’autonomie et l’organisation.</p>
+                <img src="../img/carousel-etudiants.jpg" alt="Étudiants en informatique">
+                <div class="slide-content">
+                    <h3>Des étudiants en action</h3>
+                    <p>Les étudiants apprennent en pratiquant sur des projets concrets.</p>
+                </div>
             </div>
 
             <div class="slide">
-                <h3>Une approche professionnelle</h3>
-                <p>Les projets sont pensés pour se rapprocher des situations réelles.</p>
+                <img src="../img/carousel-cyber.jpg" alt="Cybersécurité et réseaux">
+                <div class="slide-content">
+                    <h3>Cybersécurité & réseaux</h3>
+                    <p>Le département forme aux enjeux actuels de la sécurité numérique.</p>
+                </div>
             </div>
+
 
             <button onclick="nextSlide()" class="carousel-btn">›</button>
         </div>

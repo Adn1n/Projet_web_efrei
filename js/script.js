@@ -37,6 +37,54 @@ function previousSlide(){
     }
 }
 
+
+function initAnimations(){
+
+    const elements = document.querySelectorAll(".fade-in");
+
+    window.addEventListener("scroll", function(){
+
+        elements.forEach(element => {
+
+            const position = element.getBoundingClientRect().top;
+
+            if(position < window.innerHeight - 100){
+                element.classList.add("visible");
+            }
+
+        });
+
+    });
+}
+
+function initCounters(){
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(counter => {
+        const target = Number(counter.getAttribute("data-target"));
+        let value = 0;
+        const speed = Math.ceil(target / 80);
+
+        const updateCounter = setInterval(function(){
+            value += speed;
+
+            if(value >= target){
+                if(counter.classList.contains("no-plus")){
+                    counter.textContent = target;
+                }
+                else{
+                    counter.textContent = target + "+";
+                }
+
+                clearInterval(updateCounter);
+            }
+            else{
+                counter.textContent = value;
+            }
+        }, 25);
+    });
+}
+
 // BOUTON RETOUR EN HAUT
 
 function goTop(){
@@ -48,6 +96,8 @@ function goTop(){
 
 document.addEventListener("DOMContentLoaded", function(){
 
+    initAnimations();
+    initCounters();
     // Initialisation du carrousel
 
     slides = document.querySelectorAll(".slide");

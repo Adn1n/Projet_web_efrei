@@ -185,3 +185,16 @@
 .actus-section .card:hover{
     transform: translateY(-8px);
 }
+
+.slide img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.slide-content h3{
+    color: #0A316C;
+    margin-bottom: 10px;
+}
