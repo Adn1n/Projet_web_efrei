@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Département Informatique EFREI - Formations</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/formations.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-zone">
+                <img src="../img/logo-efrei.png" alt="Logo EFREI" class="logo">
+                <h1>Département Informatique</h1>
+            </div>
+
+            <button id="menu-button" class="menu-button">☰</button>
+
+            <nav id="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="formations.html">Formations</a>
+                <a href="equipe.html">Équipe</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <div class="section-title">
+                <h2>Cours et formations</h2>
+                <div class="line"></div>
+            </div>
+
+            <p>
+                Le département informatique propose des enseignements variés permettant aux étudiants
+                d’acquérir des compétences solides dans les domaines du développement, des systèmes,
+                des réseaux et des technologies numériques.
+            </p>
+        </section>
+
+        <section class="formations-section">
+            <div class="section-title">
+                <h2>Nos formations principales</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="search-zone">
+                <label for="searchFormation">Rechercher une formation :</label>
+                <input type="text" id="searchFormation" placeholder="Exemple : Web, Réseaux, JavaScript...">
+            </div>
+
+            <div class="table-container">
+                <table id="formationTable">
+                    <caption>Liste des cours et compétences</caption>
+                    <thead>
+                        <tr>
+                            <th>Formation</th>
+                            <th>Niveau</th>
+                            <th>Compétences principales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programmation Web</td>
+                            <td>TI402</td>
+                            <td>HTML5, CSS3, JavaScript, DOM</td>
+                        </tr>
+                        <tr>
+                            <td>Algorithmique</td>
+                            <td>L1 / L2</td>
+                            <td>Logique, conditions, boucles, tableaux</td>
+                        </tr>
+                        <tr>
+                            <td>Bases de données</td>
+                            <td>L2 / L3</td>
+                            <td>Conception, tables, requêtes SQL</td>
+                        </tr>
+                        <tr>
+                            <td>Réseaux informatiques</td>
+                            <td>L2 / L3</td>
+                            <td>Protocoles, client-serveur, sécurité</td>
+                        </tr>
+                        <tr>
+                            <td>Développement logiciel</td>
+                            <td>L3</td>
+                            <td>Programmation, organisation du code, projet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="noResult" class="no-result">Aucune formation trouvée.</p>
+        </section>
+
+        <section class="competences-section">
+            <div class="section-title">
+                <h2>Compétences développées</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Développement web</h3>
+                    <p>Créer des pages structurées avec HTML, les styliser avec CSS et ajouter de l’interactivité avec JavaScript.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🧠</div>
+                    <h3>Logique informatique</h3>
+                    <p>Comprendre les algorithmes, utiliser les conditions, les boucles, les fonctions et les tableaux.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🤝</div>
+                    <h3>Travail en projet</h3>
+                    <p>Organiser un projet web en groupe, respecter une maquette et produire un code clair.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="specialites-section">
+            <div class="section-title">
+                <h2>Domaines de spécialisation</h2>
+                <div class="line"></div>
+            </div>
+
+            <ul class="triangle-list">
+                <li>Développement web et mobile</li>
+                <li>Intelligence artificielle et données</li>
+                <li>Cybersécurité et réseaux</li>
+                <li>Systèmes d’information</li>
+            </ul>
+        </section>
+    </main>
+
+    <button id="top-button" onclick="goTop()">↑</button>
+
+    <footer>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="formations.html">Formations</a>
+            <a href="equipe.html">Équipe</a>
+            <a href="contact.html">À propos</a>
+        </nav>
+        <p>© 2025 - Département Informatique EFREI</p>
+    </footer>
+</body>
+</html>

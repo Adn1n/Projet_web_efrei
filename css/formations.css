@@ -1,0 +1,114 @@
+/* PAGE FORMATIONS */
+
+.page-intro{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.page-intro p{
+    font-size: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.formations-section{
+    background-color: #FFFFFF;
+}
+
+.search-zone{
+    max-width: 700px;
+    margin: 0 auto 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.search-zone label{
+    font-weight: bold;
+    color: #0A316C;
+}
+
+.search-zone input{
+    padding: 15px;
+    border: 2px solid #0A316C;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.table-container{
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+caption{
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #0A316C;
+}
+
+th{
+    background-color: #0A316C;
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+td{
+    padding: 18px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+tr:hover{
+    background-color: #F4F7FA;
+}
+
+.no-result{
+    display: none;
+    text-align: center;
+    margin-top: 25px;
+    color: #0A316C;
+    font-weight: bold;
+}
+
+.triangle-list{
+    max-width: 700px;
+    margin: auto;
+    list-style: none;
+}
+
+.triangle-list li{
+    background-color: #0A316C;
+    color: white;
+    margin-bottom: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 17px;
+}
+
+.triangle-list li::before{
+    content: "▶";
+    color: #FDCB6E;
+    margin-right: 12px;
+}
+
+@media screen and (max-width: 768px){
+
+    th,
+    td{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .search-zone{
+        width: 100%;
+    }
+}

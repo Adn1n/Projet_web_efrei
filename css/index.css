@@ -1,0 +1,158 @@
+/* PAGE ACCUEIL */
+
+/* HERO */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(to right, #0A316C 50%, white 50%);
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.small-title{
+    color: #FDCB6E;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-text h2{
+    font-size: 42px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.hero-image{
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+/* CHIFFRES */
+
+.chiffres{
+    background-color: #0A316C;
+    text-align: center;
+}
+
+.chiffres h2{
+    color: white;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.stats div{
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    width: 240px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stats div:hover{
+    transform: translateY(-8px);
+}
+
+.stats strong{
+    font-size: 35px;
+    color: #0A316C;
+}
+
+.stat-icon{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* CAROUSEL */
+
+.carousel-section{
+    text-align: center;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.slide{
+    display: none;
+    background-color: white;
+    padding: 45px;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.slide.active{
+    display: block;
+}
+
+.carousel-btn{
+    background-color: #0A316C;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.carousel-btn:hover{
+    background-color: #81ECEC;
+    color: #0A316C;
+}
+
+/* RESPONSIVE ACCUEIL */
+
+@media screen and (max-width: 768px){
+
+    .hero{
+        flex-direction: column;
+        background: #0A316C;
+        text-align: center;
+    }
+
+    .hero-text h2{
+        font-size: 30px;
+    }
+
+    .stats{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel{
+        flex-direction: column;
+    }
+
+    .slide{
+        width: 100%;
+    }
+}
